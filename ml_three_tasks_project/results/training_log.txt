@@ -1,0 +1,36 @@
+Classification metrics:
+                       model  accuracy  precision   recall       f1  roc_auc
+               Random Forest      0.90   0.842105 0.888889 0.864865 0.939019
+Gradient Boosting Classifier      0.90   0.842105 0.888889 0.864865 0.944444
+         Logistic Regression      0.81   0.814815 0.611111 0.698413 0.910590
+
+Clustering metrics:
+ k    inertia  silhouette_score
+ 2 269.691012          0.321271
+ 3 157.704008          0.466585
+ 4 108.921317          0.493907
+ 5  65.568408          0.554657
+ 6  55.057348          0.539880
+ 7  44.864756          0.528149
+ 8  37.148117          0.456721
+
+Chosen k by silhouette score: 5
+
+Insurance regression metrics:
+                      model         MAE         RMSE        R2
+Gradient Boosting Regressor 2429.937873  4316.195986  0.880002
+              Mean baseline 9593.338461 12465.610442 -0.000919
+
+Summary saved to results/summary.json
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

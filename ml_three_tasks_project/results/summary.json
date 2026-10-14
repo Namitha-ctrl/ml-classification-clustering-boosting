@@ -1,0 +1,18 @@
+{
+  "classification_best_by_f1": {
+    "model": "Random Forest",
+    "accuracy": 0.9,
+    "precision": 0.8421052631578947,
+    "recall": 0.8888888888888888,
+    "f1": 0.8648648648648649,
+    "roc_auc": 0.9390190972222222
+  },
+  "clustering_best_k_by_silhouette": 5,
+  "clustering_best_silhouette": 0.5546571631111091,
+  "boosting_gradient_boosting": {
+    "model": "Gradient Boosting Regressor",
+    "MAE": 2429.937873490924,
+    "RMSE": 4316.195985689942,
+    "R2": 0.8800019323322256
+  }
+}
